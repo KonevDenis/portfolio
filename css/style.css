@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
+html{
+  font-size: 15px;
+}
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+p{
+  margin: 0 0 10px;
+}
+/*======
+div container - это общий кониейнер для всего
+поэтому мы ему написали макс-ширина = 1000px 
+и с помощью margin сделали по центру
+=====*/
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000 url('../img/bg.png') center repeat;
+  background-size: cover;
+}
+/*HEADER*/
+.header{
+  background-color: #2B7DED;
+}
+.header__logo img{
+  display: block;
+}
+.header__wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 105px;
+}
+.header__brand{
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header__nav a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.2s linear;
+
+}
+.header__nav a:not(:last-child){
+  margin-right: 1rem;
+}
+.header-nav-link.active{
+  position: relative;
+}
+.header-nav-link.active::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+.header-nav-link:hover{
+  color: #5c98ec ;
+
+}
+/*CONTENT*/
+.subtitle{
+  color: #707070;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.title{
+  font-style: 30px;
+  font-weight: 500;
+  line-height: 40px; 
+  margin-bottom: 36px;
+}
+.title-contacts{
+  font-style: 30px;
+  font-weight: 500;
+  line-height: 40px; 
+  margin-bottom: 1rem;
+}
+.blue-text{
+  color: #2B7DED;
+}
+.text{
+  max-width: 555px;
+  margin-bottom: 50px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.subtext{
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 487px;
+  margin-bottom: 34px;
+}
+
+
+/*BTN*/
+.button__content{
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #2B7DED;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background 0.2s linear;
+}
+.button__content:hover{
+  background-color: #0a6af0;
+}
+
+/*PHOTO*/
+.me__photo{
+  width: 400px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/*FOOTER*/
+.foot{
+  width: 100%;
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+}
+.contacts{
+  display: flex;
+  align-items: center;
+
+}
+.contacts a{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+
+}
+.contacts a:not(:last-child){
+  margin-right: 2rem;
+}
+.contacts a:hover{
+  text-decoration: underline;
+}
+.contacts img{
+  margin-right: 0.5rem;
+}
+/*FORM*/
+.form{
+  width: 100%;
+  max-width: 280px;
+}
+.input{
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #fff;
+  padding: 12px 18px;
+  border: 0;
+  margin-bottom: 20px;
+  background-color: #707070;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.input::placeholder{
+  color: #fff;
+}
+.textarea{
+  resize: none;
+  background-color: #707070;
+  border-radius: 5px;
+  opacity: 0.5;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+
+}
+.textarea::placeholder{
+  color: #fff;
+}
